@@ -84,7 +84,10 @@ const tetrominos = [
       return new Tetromino(type as TETROMINO_TYPE);
     }
 
-    
+    // 空のテトリミノを取得する
+    static empty(): Tetromino {
+        return new Tetromino(0 as TETROMINO_TYPE);
+    }
 
 
        // `num` 回 90度テトリミノの二次元行列 `data` を回転させた結果 (二次元配列) を取得する関数
